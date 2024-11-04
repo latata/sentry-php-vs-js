@@ -8,6 +8,7 @@ export default function Home() {
   return (
       <div className={styles.page}>
         <Script src="https://js.sentry-cdn.com/60535d667dfd8f10d5dcc52bc75b2952.min.js" crossOrigin="anonymous" onLoad={() => {
+          // @ts-ignore
           window.Sentry.init({
             environment: 'dev'
 
